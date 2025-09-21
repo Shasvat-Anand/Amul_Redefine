@@ -67,7 +67,7 @@ ScrollTrigger.matchMedia({
         end: "center bottom",
         scrub: true,
       },
-      y: isShortHeight ? '473vh' : "473vh",
+      y: isShortHeight ? '492vh' : "473vh",
       x:'1vh',
       width: "18vw",
 
@@ -190,15 +190,16 @@ ScrollTrigger.matchMedia({
     })
 
     gsap.from(split.chars,{
-      yPercent: () => gsap.utils.random(-100,100),
-      rotation: () => gsap.utils.random(-30,30),
+      // yPercent: () => gsap.utils.random(-100,100),
+      // rotation: () => gsap.utils.random(-30,30),
       autoAlpha:0,
       duration: 2,
-        y: 300,
+        y:300,
+        
         rotation: 0,
         opacity: 0,
-        ease: "elastic",
-        stagger: 0.12
+        ease:"elastic",
+        stagger: 0.15,
 
     });
 
@@ -207,7 +208,7 @@ ScrollTrigger.matchMedia({
       opacity:0,
       scale:0,
       duration:1,
-      delay:1.7,
+      delay:1.8,
       ease:'power1.inOut'
     })
 
